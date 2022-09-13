@@ -1,26 +1,25 @@
 # Browser Lock (ex. Pattern Lock Extension)
-자유롭게 브라우징 하세요. Browser Lock이 당신의 브라우저를 잠궈드립니다. </br>
-([웨일 포럼](http://forum.whale.naver.com/) 기능제안 최다 요구)
+Browse freely. Browser Lock locks your browser.</br>
+Most requests for feature proposals on the [Whale Forum](http://forum.whale.naver.com/)
 
 ## What Is It All About
-Browser Lock은 크롬 기반 브라우저의 Extension (확장 프로그램) 으로써, 브라우저를 <b>잠그는</b> 기능을 하도록 고안되었다.</br>
-2017년 상반기, NAVER의 Chrome 기반 Web Browser [Whale](http://whale.naver.com/) 출시에 힘입어, 다양한 이유에 의해 브라우저를 잠그길 원하는 요청들에 대응할 방책을 고심하였다.
-브라우저가 아닌 익스텐션의 차원에서 해당 기능 (브라우저 잠금) 을 실현할 수 있는지 검토함으로써 본 프로젝트가 시작되었다.
+Browser Lock is an extension of the Chrome-based browser and is designed to lock the browser.</br>
+In the first half of 2017, thanks to the launch of NAVER's Chrome-based Web Browser Whale , we considered ways to respond to requests to lock the browser for various reasons. This project was started by examining whether the corresponding function (browser lock) could be realized at the level of the extension rather than the browser.
 
 ## Lock
-브라우저를 잠금에서 <b>잠금</b>의 의미는 잠금 이전의 시점까지의 브라우징 기록에 대한 접근을 차단하는 것이다. 권한 (이 경우 패스워드 혹은 패턴) 을 획득하였을 때, 다시 이전 브라우징 기록에 접근할 수 있고, 그렇지 않다면 해당 기록은 유실된다.
+Locking the browser means to block access to the browsing history up to the point before the lock. When the authority (in this case, the password or pattern) is obtained, the previous browsing history can be accessed again, otherwise the record will be lost.
 
 ## How It Works
-Browser Lock은 브라우저를 다음과 같은 방식으로 잠근다.
-- 열린 탭 직렬화 저장 및 닫기
-- 저장된 쿠키 모두 저장 및 삭제
-- 브라우징 히스토리 저장 및 삭제
-- 잠금 화면 출력
-- ~~~저장된 패스워드 삭제 (현재 재외)~~~
+Browser Lock locks the browser in the following way.
+- Save and close open tab serialization
+- Save and delete all saved cookies
+- Saving and Deleting Browsing History
+- lock screen output
+- ~~~Delete saved password (currently overseas)~~~
 
-잠금이 작동하면, 사용자의 로그인 상태는 해제되고, 잠금 해제없이 이전의 고유 사용기록에 접근할 수 없는 상태가 된다.</br>
-한편, 잠금 화면에서도 사용자 (혹은 손님) 은 자유롭게 브라우저를 사용할 수 있다. </br>
-사용자가 잠금화면에서 Master Password입력에 성공하면, 저장해두었던 모두 데이터를 복원하고 잠금 이전의 시점으로 브라우저 (탭 등을)를 세팅한다.
+When the lock is activated, the user's login status is released, and the previous unique usage history cannot be accessed without unlocking it.</br>
+Meanwhile, the user (or guest) can freely use the browser even on the lock screen.</br>
+If the user succeeds in entering the Master Password on the lock screen, all saved data is restored and the browser (tabs, etc.) is set to the point before lock.
 
 ## Build
 ```
@@ -29,4 +28,4 @@ npm run build
 ```
 
 ## Install
-Chrome 기반 브라우저의 확장 앱 추가 (Add Extension) 를 해야 한다. 이 때, Build를 통해 생성된 lib폴더를 Add (혹은 Load) 해야 한다.
+You need to add an extension app for the Chrome-based browser. At this time, you need to add (or load) the lib folder created through Build.
