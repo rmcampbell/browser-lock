@@ -15,7 +15,6 @@ Browser Lock locks the browser in the following way.
 - Save and delete all saved cookies
 - Saving and Deleting Browsing History
 - lock screen output
-- ~~~Delete saved password (currently overseas)~~~
 
 When the lock is activated, the user's login status is released, and the previous unique usage history cannot be accessed without unlocking it.</br>
 Meanwhile, the user (or guest) can freely use the browser even on the lock screen.</br>
